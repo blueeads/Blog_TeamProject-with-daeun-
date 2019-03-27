@@ -3,6 +3,9 @@
 ?>
 <link rel="stylesheet" href="login.css">
 
+<?php
+?>
+
 <div class = "login_box">
     <div class = "login_index">
         <div class = login_box_size>
