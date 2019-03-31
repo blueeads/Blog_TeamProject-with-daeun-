@@ -11,6 +11,16 @@ a {
     text-decoration:none ;
 }
 
+ul {
+    list-style: none;
+    margin : 0;
+    padding : 0;
+}
+li {
+    margin : 0;
+    padding : 0;
+}
+
 .logo_animation {
     z-index: 5;
     text-align : center;
