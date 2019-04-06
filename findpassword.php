@@ -9,10 +9,11 @@
         $user_id = $_POST['user_id'];
         $user_name = $_POST['user_name'];
 
-        $st = $db->prepare("SELECT * FROM user WHERE user_id = ? and user_name = ? and user_pw = ?");
-        $st->execute([$user_id,, $user_name, $user_pw]);
+        $st = $db->prepare("SELECT * FROM user WHERE idx = ?");
+        $st->execute([$user_id, $user_name, $user_pw]);
 
-
+        echo "<script>alert('$user_pw'); location.href = '#'</script>"
+        "<script>alert('로그인이 완료되었습니다.'); location.href = './main.php';</script>";
     }
 ?>
 
