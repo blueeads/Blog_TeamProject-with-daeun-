@@ -6,7 +6,6 @@
 <div class = "login_box">
     <div class = "index_box">
         <div class = login_box_size>
-
             <div class = "login_logo">
                 <img src="logo.png" alt="" width = "100px" height = "100px">
             </div>

@@ -11,12 +11,14 @@
     width : 100%;
     height : 50px;
     border-bottom : 2px solid gray;
+    position: fixed;
+    background: rgb(45, 43, 52);
+    z-index : 1;
 }
 .top-main {
     list-style : none;
     display : inline-block;
     padding-right : 20px;
-
 }
 
 .main-logo {
@@ -53,7 +55,7 @@
 .view-box {
     float : left;
     margin-top : 60px;
-    width : 65%;
+    width : 540px;
 }
 
 .view-box ul {
@@ -144,7 +146,10 @@
 }
 
 .right-sidebox {
-    float : right;
+    float: right;
+    display: inline-block;
+    position: absolute;
+    margin-left: 100px;
 }
 </style>
 

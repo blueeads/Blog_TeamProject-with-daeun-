@@ -1,6 +1,21 @@
 <?php
     require __DIR__ . '/header.php';
+
+    session_start();
+
+    $db = new PDO("mysql:host=localhost;dbname=bloghomepage", "root", "");
+    
+    if (isset($_POST['user_id']) && isset($_POST['user_name'])) {
+        $user_id = $_POST['user_id'];
+        $user_name = $_POST['user_name'];
+
+        $st = $db->prepare("SELECT * FROM user WHERE user_id = ? and user_name = ? and user_pw = ?");
+        $st->execute([$user_id,, $user_name, $user_pw]);
+
+
+    }
 ?>
+
 <link rel="stylesheet" href="login.css">
 
 <div class = "login_box">
@@ -25,8 +40,8 @@
                         <input type="password" class = "login_input" id = "login_input_text" name = "user_id" placeholder = "ID">
                     </li>
                 </ul>
-                </form>
                 <button type="submit" class = "login_input" id = "login_btn" >FIND</button>
+                </form>
             </div>
         
         <!-- <div class = "login_button">
