@@ -11,15 +11,14 @@
 
 <div class = "top-line">
     <div class = "main-logo">
-        <img src="logo.png" alt="" width = "45px" height = "45px">
-        <input type="button" class="img-button">
+       <button type="button" class="img-button" onclick = "location.href = './main.php'"> <img src="logo.png" alt="" width = "45px" height = "45px"></button> 
     </div>
     <div class = "top-menu">
         <ul>
-            <li class = "top-main" id = "home"> <a href="#">Home</a> </li>
-            <li class = "top-main" id = "setting"> <a href="#">setting</a> </li>
-            <li class = "top-main" id = "user"> <a href="#">user</a> </li>
-            <li class = "top-main" id = "write"> <a href="#">write</a> </li>
+            <li class = "top-main" id = "home"> <a href="./main.php">Home</a> </li>
+            <!-- <li class = "top-main" id = "setting"> <a href="#">setting</a> </li>
+            <li class = "top-main" id = "user"> <a href="#">user</a> </li> -->
+            <li class = "top-main" id = "write"> <a href="./add.php">write</a> </li>
         </ul>
     </div>
 </div>
@@ -35,9 +34,8 @@
             <table>
                 <tbody>
                             <tr> <td class = "view=title"> <p> <?php echo $content['content']; ?> </p></td> </tr>
-
                             <tr> <td class = "view-image"></td> </tr>
-                            <tr> <td class = "view-star"> <script>DrawStar(3);</script> </td></tr>
+                            <tr> <td class = "view-star" id = "view-star-id"> <script>DrawStar(3);</script> </td></tr>
                             <tr><td class = "view-recommend"> <p><?php echo $content['subject']; ?></p>  </td></tr>
                             <tr><td  class = "view-user"> <p>Write : <?php echo $content['user']; ?></p>  </td></tr>
                             <br>

@@ -3,8 +3,9 @@
 
     session_start();
 
-    $db = new PDO("mysql:host=localhost;dbname=bloghomepage", "root", "");
-    
+    // $db = new PDO("mysql:host=localhost;dbname=bloghomepage", "root", "");
+     $db = new PDO("mysql:host=localhost;dbname=myhomepage", "root", "");
+
     if (isset($_POST['user_id']) && isset($_POST['user_pw'])) {
         $user_id = $_POST['user_id'];
         $user_pw = $_POST['user_pw'];
